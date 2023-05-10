@@ -1,3 +1,16 @@
-let itemList;
+const paragraphTag = document.createElement("p");
+const node = document.createTextNode("This is new");
+const element = document.getElementById("listdiv");
 
-<event>on click</event>
+function addListItem() {
+  paragraphTag.appendChild(node);
+  element.appendChild(paragraphTag);
+}
+
+function deleteListItem() {
+  paragraphTag.remove();
+}
+
+
+
+
